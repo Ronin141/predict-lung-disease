@@ -1,5 +1,5 @@
 1. รัน server:
-   uvicorn app.py
+   uvicorn app:app --reload
 
 2. ทดสอบ API:
    curl -X POST "http://localhost:8000/predict/" \

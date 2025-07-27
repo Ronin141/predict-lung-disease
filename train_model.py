@@ -19,10 +19,10 @@ import seaborn as sns
 import warnings
 warnings.filterwarnings('ignore')
 
-# Configuration
-DATA_PATH = '/content/drive/MyDrive/ICBHI_final_database'
-MODEL_PATH = '/content/drive/MyDrive/lung_sound_model.h5'
-ENCODER_PATH = '/content/drive/MyDrive/label_encoder.pkl'
+ # Configuration
+DATA_PATH = r'E:\My work\predict-lung-disease\data\ICBHI_final_database'
+MODEL_PATH = 'lung_sound_model.h5'
+ENCODER_PATH = 'label_encoder.pkl'
 
 class LungSoundTrainer:
     def __init__(self, data_path, model_path, encoder_path):
