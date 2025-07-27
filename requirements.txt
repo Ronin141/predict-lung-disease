@@ -1,0 +1,26 @@
+# Core ML libraries
+tensorflow>=2.10.0
+scikit-learn>=1.1.0
+numpy>=1.21.0
+pandas>=1.4.0
+
+# Audio processing
+librosa>=0.9.0
+soundfile>=0.12.0
+
+# Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# API framework
+fastapi>=0.85.0
+uvicorn[standard]>=0.18.0
+python-multipart>=0.0.5
+
+# Utilities
+pickle5>=0.0.11
+python-dotenv>=0.19.0
+
+# Optional: Jupyter for data exploration
+jupyter>=1.0.0
+ipykernel>=6.15.0
