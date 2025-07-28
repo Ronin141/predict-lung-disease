@@ -15,7 +15,7 @@ def analyze_model_and_data():
     
     # Load model and encoder
     try:
-        model = tf.keras.models.load_model('lung_sound_model.h5')
+        model = tf.keras.models.load_model('lung_sound_binary_model.h5')
         with open('label_encoder.pkl', 'rb') as f:
             label_encoder = pickle.load(f)
         print("✅ Model and encoder loaded successfully")

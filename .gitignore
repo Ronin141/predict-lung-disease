@@ -5,3 +5,5 @@ confusion_matrix.png
 training_history.png
 training_log.csv
 best_model_checkpoint.h5
+lung_sound_binary_model.h5
+binary_label_encoder.pkl
