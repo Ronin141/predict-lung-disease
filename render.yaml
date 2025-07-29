@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: lung-api
+    plan: free
+    region: singapore
+    runtime: docker          # ✅ บอกให้ชัดว่าคือ Docker (สำคัญ!)
+    dockerfilePath: ./Dockerfile
