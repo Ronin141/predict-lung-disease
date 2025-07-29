@@ -23,3 +23,5 @@ python-dotenv>=0.19.0
 # Optional: Jupyter for data exploration
 jupyter>=1.0.0
 ipykernel>=6.15.0
+
+gdown
