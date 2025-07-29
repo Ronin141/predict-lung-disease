@@ -10,6 +10,7 @@ from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
+from load_model import download_model # Import the model loading function
 
 # Initialize FastAPI app
 app = FastAPI(
@@ -30,6 +31,7 @@ app.add_middleware(
 # Global variables
 model = None
 normalization_params = None
+MODEL_ID = "1ZLVYUb0PHTSAk6HlcGOjFa691iYLh4f5"
 MODEL_PATH = 'lung_sound_binary_model.h5'
 NORM_PARAMS_PATH = 'binary_label_encoder.pkl'
 
@@ -44,7 +46,7 @@ def load_model_and_params():
     Load trained binary model and normalization parameters
     """
     global model, normalization_params
-    
+    download_model()
     try:
         if not os.path.exists(MODEL_PATH):
             print(f"Model file not found: {MODEL_PATH}")
